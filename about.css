@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #3f4047;
+}
+
+li,
+a,
+button {
+  font-family: poppins;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 10%;
+}
+.logo {
+  cursor: pointer;
+  height: 10vh;
+  width: 20vh;
+  transition: ease-in-out 1s;
+}
+.logo:hover {
+  transform: rotatey(360deg);
+}
+.nav-links {
+  list-style: none;
+}
+.nav-links li {
+  display: inline-block;
+  padding: 0px 10px;
+  justify-content: space-between;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+  color: rgb(101, 252, 227);
+}
+button {
+  padding: 9px 25px;
+  background-color: darkblue;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button :hover {
+  color: #000;
+}
+h1 {
+  font-weight: 16rem;
+  color: aqua;
+}
+
+button {
+  top: 5px;
+  position: relative;
+  color: aqua;
+  border-radius: 5px 5px;
+}
+
+.about-section {
+  background: url(/imges/hands.jpeg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: 40px 0;
+  border-radius: 3px;
+}
+.inner-container {
+  width: 50%;
+  float: right;
+  background-color: rgb(106, 213, 255);
+  padding: 130px;
+}
+.inner-container h1 {
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 400;
+}
+.text {
+  font-size: 13px;
+  color: black;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+a[target] {
+  background-color: yellow;
+}
+.skills {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 13px;
+}
+@media screen and (max-width: 1200px) {
+  .inner-container {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about-section {
+    background-size: 70%;
+    padding: 100px 40px;
+  }
+  .inner-container {
+    width: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-section {
+    padding: 0px;
+  }
+  .inner-container {
+    padding: 60px;
+  }
+}

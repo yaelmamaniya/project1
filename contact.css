@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+li,
+a,
+button {
+  font-family: poppins;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10%;
+}
+.logo {
+  cursor: pointer;
+  height: 10vh;
+  width: 20vh;
+  transition: ease-in-out 1s;
+}
+.logo:hover {
+  transform: rotatey(360deg);
+}
+.nav-links {
+  list-style: none;
+}
+.nav-links li {
+  display: inline-block;
+  padding: 0px 10px;
+  justify-content: space-between;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+  color: rgb(101, 252, 227);
+}
+button {
+  padding: 9px 25px;
+  background-color: darkblue;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button :hover {
+  color: #000;
+}
+h1 {
+  font-weight: 16rem;
+  color: aqua;
+}
+
+button {
+  top: 5px;
+  position: relative;
+  color: aqua;
+  border-radius: 5px 5px;
+}
+body {
+  background-color: #3f4047;
+  background: linear-gradient(-45deg, #33343a, #323638, #3e494d, #494e4d);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  animation: change 10s ease-in-out infinite;
+}
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+h2 {
+  color: aqua;
+  text-shadow: 5px 5px 5px rgb(101, 252, 227);
+  font-weight: lighter;
+  font-size: 5rem;
+  text-align: center;
+}
+.wrapper {
+  width: 800px;
+  margin: 5% auto;
+}
+.form-area {
+  display: flex;
+  background: cyan;
+  border-radius: 25px;
+  padding: 1.9em;
+}
+.area {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+}
+.area > textarea {
+  flex: 1;
+  min-width: 18em;
+  background: transparent;
+  color: #000;
+}
+
+.details-area {
+  flex: 1;
+  order: 1px;
+  margin-right: 2em;
+}
+.details-area input {
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  border-radius: 40px;
+}
+p {
+  text-align: center;
+}

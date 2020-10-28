@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #3f4047;
+  box-sizing: border-box;
+}
+
+li,
+a,
+button {
+  font-family: poppins;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 10%;
+}
+.logo {
+  cursor: pointer;
+  height: 10vh;
+  width: 20vh;
+  transition: ease-in-out 1s;
+}
+.logo:hover {
+  transform: rotatey(360deg);
+}
+.nav-links {
+  list-style: none;
+}
+.nav-links li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+  color: rgb(101, 252, 227);
+}
+button {
+  padding: 9px 25px;
+  background-color: darkblue;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button :hover {
+  color: #000;
+}
+h1 {
+  font-weight: 16rem;
+  color: aqua;
+}
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 33%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+h2 {
+  color: aqua;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 3rem;
+}
